@@ -22,6 +22,8 @@
 ## Cryptography
 
 - **Weak encryption schemes**: Vulnerable encryption in Z-Wave devices permits key extraction and brute force attacks.
+- **Insecure Update Mechanisms:** Lack of authentication enables malicious firmware injection.
+- **Lack of Rollback Protection:** Devices vulnerable to downgrades to insecure firmware versions.
 
 ---
 
@@ -58,3 +60,22 @@
 - Keys extracted through physical access to hardware
 - Downgrade attacks to use weaker encryption
 
+## Additional Vulnerabilities
+
+- **Insecure Inclusion Process:** Vulnerabilities during device addition allow unauthorized access.
+- **Misconfiguration Vulnerabilities:** Misconfigured devices become susceptible to attacks.
+
+## Specific Chipset Vulnerabilities
+
+- **Silicon Labs 500 Series:** Various vulnerabilities including resource consumption leading to battery exhaustion and denial-of-service.
+- **Silicon Labs 100, 200, and 300 Series:** Lack of encryption leading to control or denial-of-service.
+
+## Protocol-Level Vulnerabilities
+
+- **Remote Add-Mode Vulnerabilities:** Allows remote control of any Z-Wave device.
+- **Vulnerabilities During Firmware Updates:** Manipulation of updates with the network key.
+- **Sniffing and Injecting Attacks:** Malicious devices intercept and manipulate Z-Wave communication.
+
+- **Weak Authentication:** Z-Wave uses a simple network key prone to brute-force attacks.
+- **Insecure Key Exchange:** Vulnerable key exchange process leads to eavesdropping and key theft.
+- **Lack of Key Rotation:** Devices often maintain the same key for extended periods, increasing the risk of compromise.
